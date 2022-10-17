@@ -1,0 +1,32 @@
+*{
+    margin:0;
+    padding:1px;
+    }
+   
+.container{
+        /*background-color:#ddd324;*/
+        text-align:justify;
+			  margin:0;
+        padding:0px;
+        width:100%
+        
+
+          }
+
+
+.indeximg{
+    /*background-color:#fe1d5e  ;*/
+    /*padding:2px; */
+    width:13%;
+    height:175px;
+    display:inline-block;
+    
+         }
+  
+.iframe{
+  
+  /*background-color:#4d886a;*/
+    width: 100%;
+   
+    
+       }
