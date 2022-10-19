@@ -1,0 +1,116 @@
+<!-- Design your personal web page -->
+<!-- 1. Basic Tags. [10%] -->
+<!-- 2. Background: Set a background color. [10%] -->
+<!-- 3. Font: Different types of fonts and different font colors and sizes. [10%] -->
+<!-- 4. Headings: Two different headings. [10%] -->
+<!-- 5. Images: Images with link, image description (mouse cursor). [10%] -->
+<!-- 6. Links: Two links, link to section of page, link to other web page. [10%] -->
+<!-- 7. Email. [10%] -->
+<!-- 8. Lists. [10%] -->
+<!-- 9. Misc: at least TWO different horizontal dividing lines. [10%] -->
+<!-- 10. Div: use Div to organized your webpage into left and right division. [10%] -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>lab02</title>
+
+  <link rel="icon" type="image/png" href="image/icon.png"/>
+  
+  <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	
+
+    <style>
+        .container {
+          position: relative;
+          /* width: 50%; */
+        }
+        
+        .image {
+          display: block;
+          width: 100%;
+          height: auto;
+        }
+        
+        .overlay {
+          position: absolute;
+          
+          bottom: 10%;
+          left: 0;
+          right: 0;
+          height: 15%;
+          width: 100%;
+          opacity: 0;
+          transition: .5s ease;
+          background-color: #008CBA;
+        }
+        
+        .container:hover .overlay {
+          opacity: 1;
+        }
+        
+        .text {
+          color: white;
+          font-size: 20px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+          text-align: center;
+        }
+        </style>
+  
+</head>
+  <body>
+    <div class="container-fluid">
+        
+        <div class="row">
+            <div class="col-6">
+                <div class="container">
+                    <img src="image/002.png"  title="Smiley face" width="100%">
+                    <div class="overlay">
+                        <div class="text">Hello World</div>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="col-6"></div>
+            <div class="col-6">
+                <img src="image/002.png" usemap="#me" title="Smiley face" width="100%">
+                <map name="#me">
+                    <area shape="rect" coords="54,64,150,150" alt="Computer" href="https://unsplash.com/photos/kNW_OlNF6H0">
+                </map>
+            </div>
+            <div class="col-6"></div>
+
+            <!-- <div class="col-6">
+                
+                <img  id="what" src="image/002.png"  title="Smiley face" width="100%">
+                <canvas id="shit" width="200px" height="200px"></canvas>
+            </div> -->
+            
+        </div>
+        
+        
+    </div>
+
+    
+    
+  	
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script> 
+	<script src="js/bootstrap-4.4.1.js"></script>
+    <script src="js/main.js"></script>
+
+	
+	
+  </body>
+</html>
