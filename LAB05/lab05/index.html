@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>lab02</title>
+
+  <link rel="icon" type="image/png" href="image/icon.png"/>
+  
+  <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script> 
+	<script src="js/bootstrap-4.4.1.js"></script>
+
+    <style>
+        .t_b{
+            background-color: burlywood;
+        }
+        #the{
+            background-color: cadetblue;
+        }
+        table,tr,td{
+            border: solid 1px ;
+            padding:10px;
+        }
+        table{
+            width:200px;
+        }
+    </style>
+  
+</head>
+  <body>
+    <table class="t_b" id="t_b">
+        <tr id="the">
+            <td>math</td>
+            <td>english</td>
+            <td>programming</td>
+        </tr>
+
+        <tr>
+            <td>90</td>
+            <td>60</td>
+            <td>80</td>
+        </tr>
+
+        <tr>
+            <td>80</td>
+            <td>86</td>
+            <td>98</td>
+        </tr>
+    </table>
+
+    <p>change the width</p>
+    <button type="button" class="btn btn-primary"  id="take__2" >200px</button>
+    <button type="button" class="btn btn-primary" id="take__5"  >500px</button>
+
+    <p>change the border</p>
+    <button type="button" class="btn btn-primary" id="border_1">1px</button>
+    <button type="button" class="btn btn-primary" id="border_10">10px</button>
+    <button type="button" class="btn btn-primary" id="border_20">20px</button>
+
+    <p>change the table color</p>
+    <button type="button" class="btn btn-primary" id="color_1">color 1</button>
+    <button type="button" class="btn btn-primary" id="color_2">color 2</button>
+    <button type="button" class="btn btn-primary" id="color_3">color 3</button>
+    <button type="button" class="btn btn-primary" id="color_4">color 4</button>
+
+    <br><br>
+    <button type="button" class="btn btn-primary" id="reset">RESET</button>
+    
+         
+	<script src="js/main.js"></script>
+  </body>
+</html>
